@@ -1,0 +1,17 @@
+<%= form_for :users, url:users_path do |f| %>
+<p><%= f.label "First name" %></p>
+<%= f.text_field :firstname %><br/>
+
+<p><%= f.label "Last name" %></p>
+<%= f.text_field :lastname %><br/>
+
+<p><%= f.label "E-mail" %></p>
+<%= f.text_field :email %><br/>
+
+<p><%= f.label "Password" %></p>
+<%= f.password_field :password %><br/>
+
+<p><%= f.submit "Save" %></p>
+<% end %>
+
+
